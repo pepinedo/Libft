@@ -6,7 +6,7 @@
 /*   By: ppinedo- <ppinedo-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 15:55:17 by ppinedo-          #+#    #+#             */
-/*   Updated: 2023/10/11 17:51:38 by ppinedo-         ###   ########.fr       */
+/*   Updated: 2024/01/22 10:39:15 by ppinedo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 # include <strings.h>
 # include <unistd.h>
 # include <stdlib.h>
+# include <stdarg.h>
 
 typedef struct s_list
 {
@@ -263,6 +264,16 @@ void	ft_putendl_fd(char *s, int fd);
  * @param fd where the string will be writed
  */
 void	ft_putnbr_fd(int n, int fd);
+
+/** Printf **/
+int	ft_printf(const char *type, ...);
+int	ft_putchar(char c);
+int	ft_putstr(char *s);
+int	ft_putnbr(int nbr, int i);
+int	ft_putptr(void *ptr);
+int	ft_putunbr(unsigned int nbr, int i);
+int	ft_puthex(char *base, unsigned int nbr, int i);
+int	ft_strlen(char *str);
 
 t_list	*ft_lstnew(void *content);
 int		ft_lstsize(t_list *lst);
