@@ -6,7 +6,7 @@
 #    By: ppinedo- <ppinedo-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/14 16:53:19 by ppinedo-          #+#    #+#              #
-#    Updated: 2024/02/08 12:14:51 by ppinedo-         ###   ########.fr        #
+#    Updated: 2024/02/08 12:37:26 by ppinedo-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -78,6 +78,14 @@ SRC_FILES = ft_isalpha \
 			ft_lstclear_bonus \
 			ft_lstiter_bonus \
 			ft_lstmap_bonus \
+			ft_printf \
+			ft_putchar \
+			ft_putstr \
+			ft_putnbr \
+			ft_putptr \
+			ft_putunbr \
+			ft_puthex \
+			ft_strlen \
 
 SRC = $(addprefix $(SRC_DIR), $(addsuffix .c, $(SRC_FILES)))
 OBJ = $(addprefix $(OBJ_DIR), $(addsuffix .o, $(SRC_FILES)))

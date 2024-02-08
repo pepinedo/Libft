@@ -1,23 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ppinedo- <ppinedo-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/29 11:20:31 by ppinedo-          #+#    #+#             */
-/*   Updated: 2023/11/29 12:04:37 by ppinedo-         ###   ########.fr       */
+/*   Created: 2023/11/15 13:30:39 by ppinedo-          #+#    #+#             */
+/*   Updated: 2023/11/28 12:51:51 by ppinedo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_strlen(char *str)
+int	ft_putstr(char *s)
 {
 	int	i;
 
 	i = 0;
-	while (str[i] != '\0')
+	if (!s)
+		return (ft_putstr("(null)"));
+	while (s[i] != '\0')
+	{
+		ft_putchar(s[i]);
 		i++;
+	}
 	return (i);
 }
