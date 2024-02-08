@@ -6,7 +6,7 @@
 /*   By: ppinedo- <ppinedo-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 15:55:17 by ppinedo-          #+#    #+#             */
-/*   Updated: 2024/02/08 12:35:19 by ppinedo-         ###   ########.fr       */
+/*   Updated: 2024/02/08 13:02:18 by ppinedo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,12 +20,17 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <stdarg.h>
+# include <libc.h>
 
 typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
 }t_list;
+
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 4
+# endif
 
 int		ft_isalpha(int a); // 1 = alphabet
 int		ft_isdigit(int a); // 1 = digit
@@ -285,5 +290,8 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *));
 void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+
+/** Get Next Line **/
+char			*get_next_line(int fd);
 
 #endif
