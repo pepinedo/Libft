@@ -6,11 +6,11 @@
 /*   By: ppinedo- <ppinedo-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/29 11:53:25 by ppinedo-          #+#    #+#             */
-/*   Updated: 2023/11/29 12:04:23 by ppinedo-         ###   ########.fr       */
+/*   Updated: 2024/02/08 12:41:20 by ppinedo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include <libft.h>
 
 int	ft_puthex(char *base, unsigned int nbr, int i)
 {

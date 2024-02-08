@@ -6,11 +6,11 @@
 /*   By: ppinedo- <ppinedo-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 11:34:09 by ppinedo-          #+#    #+#             */
-/*   Updated: 2023/11/28 15:58:18 by ppinedo-         ###   ########.fr       */
+/*   Updated: 2024/02/08 12:41:04 by ppinedo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include <libft.h>
 
 int	ft_putnbr(int nbr, int i)
 {

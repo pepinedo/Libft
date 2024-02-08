@@ -6,13 +6,13 @@
 /*   By: ppinedo- <ppinedo-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/29 11:20:31 by ppinedo-          #+#    #+#             */
-/*   Updated: 2023/11/29 12:04:37 by ppinedo-         ###   ########.fr       */
+/*   Updated: 2024/02/08 12:40:14 by ppinedo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include <libft.h>
 
-int	ft_strlen(char *str)
+int	ft_strlen(const char *str)
 {
 	int	i;
 

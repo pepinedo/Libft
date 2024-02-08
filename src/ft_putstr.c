@@ -6,11 +6,11 @@
 /*   By: ppinedo- <ppinedo-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 13:30:39 by ppinedo-          #+#    #+#             */
-/*   Updated: 2023/11/28 12:51:51 by ppinedo-         ###   ########.fr       */
+/*   Updated: 2024/02/08 12:40:56 by ppinedo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include <libft.h>
 
 int	ft_putstr(char *s)
 {
